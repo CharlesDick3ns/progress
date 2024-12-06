@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ce la fa REMO</title>
+    <link rel="stylesheet" href="css/stile_imieilavori.css">
+    <script src="JavaScript/imieilavori.js" defer></script>
+</head>
+
+<body>
+        <!-- Header -->
+        <div id="header" class="container">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="./img/logo.png" alt="logo REMO" class="logo-img">
+                </a>
+            </div>
+    
+            <!-- Menu -->
+            <div id="menu" class="menu">
+                <a href="chi_sono.html" class="menu-link">CHI SONO</a>
+                <a href="i_miei_lavori.html" class="menu-link">I MIEI LAVORI</a>
+                <a href="contatti.html" class="menu-link">CONTATTI</a>
+            </div>
+    
+            <!-- Menu Hamburger -->
+            <div class="menu-hamburger" id="menu-hamburger" onclick="toggleMenu()">
+                <span class="hamburger-icon"></span>
+                <span class="hamburger-icon"></span>
+                <span class="hamburger-icon"></span>
+            </div>
+        </div>
+    
+    <!-- Sezione Esperienze -->
+    <div class="experiences">
+        <h1 class="page-title">I MIEI LAVORI</h1>
+        
+        <!-- Esperienza 1 -->
+        <div class="exp-container">
+            <p class="exp-title">La mia esperienza presso Associazione Musicale "Arte delle Muse"</p>
+            <p class="toggle-text" onclick="toggleTable('table1')">(visualizza)</p>
+            <table id="table1" class="hidden-table">
+                <tr>
+                    <td>AZIENDA: Arte delle Muse<br>RUOLO: Docente di batteria</td>
+                    <td>DESCRIZIONE:<br>Lezioni individuali di batteria, compresive di pratica e teoria (tecnica dello strumento, notazione musicale, valore delle note, lettura spartiti, ecc.) e lezioni di musica d'insieme</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Esperienza 2 -->
+        <div class="exp-container">
+            <p class="exp-title">La mia esperienza presso Gimme Catchy</p>
+            <p class="toggle-text" onclick="toggleTable('table2')">(visualizza)</p>
+            <table id="table2" class="hidden-table">
+                <tr>
+                    <td>AZIENDA: Gimme Catchy<br>RUOLO: Batterista</td>
+                    <td>DESCRIZIONE:<br>Svolgo la mia attività di batterista all'interno di questa live band, indirizzata principalmente a matrimoni ed eventi italiani ed internazionali. Il nostro stile abbraccia il panorama musicale soul, rnb e pop, con arrangiamenti personalizzati anche di grandi classici della musica mondiale</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Esperienza 3 -->
+        <div class="exp-container">
+            <p class="exp-title">La mia esperienza presso Associazione Culturale Musica "Euterpe"</p>
+            <p class="toggle-text" onclick="toggleTable('table3')">(visualizza)</p>
+            <table id="table3" class="hidden-table">
+                <tr>
+                    <td>AZIENDA: Euterpe<br>RUOLO: Docente di batteria e pianoforte</td>
+                    <td>DESCRIZIONE:<br>Lezioni individuali di batteria e pianoforte, ad alunni di tutti i livelli ed età, compresive di pratica e teoria (tecnica dello strumento, notazione musicale, valore delle note, lettura spartiti, ecc.)</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+   <!-- Footer -->
+   <div id="footer" class="container">
+        <div id="footer-text">
+            <p>REALIZZATO DA: <br> Gianluca Careccia</p>
+        </div>
+        <div id="socials" class="socials">
+            <div class="social-container">
+                <a href="https://wa.me/393409574914" target="_blank">
+                    <span class="social-text">Whatsapp</span>
+                    <img src="./img/whatsapp.png" alt="Logo WhatsApp" class="social-image">
+                </a>
+            </div>
+            <div class="social-container">
+                <a href="https://www.instagram.com/remo.nellarte/" target="_blank">
+                    <span class="social-text">Instagram</span>
+                    <img src="./img/instagram.png" alt="Logo Instagram" class="social-image">
+                </a>
+            </div>
+            <div class="social-container">
+                <a href="https://www.facebook.com/gianluca.careccia" target="_blank">
+                    <span class="social-text">Facebook</span>
+                    <img src="./img/facebook.png" alt="Logo Facebook" class="social-image">
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

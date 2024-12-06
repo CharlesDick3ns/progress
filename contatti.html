@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ce la fa REMO</title>
+    <link rel="stylesheet" href="css/stile_contatti.css">
+    <script src="JavaScript/contatti.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header" class="container">
+        <div id="logo">
+            <a href="index.html">
+                <img src="./img/logo.png" alt="logo REMO" class="logo-img">
+            </a>
+        </div>
+        <div id="menu" class="menu">
+            <a href="chi_sono.html" class="menu-link">CHI SONO</a>
+            <a href="i_miei_lavori.html" class="menu-link">I MIEI LAVORI</a>
+            <a href="contatti.html" class="menu-link">CONTATTI</a>
+        </div>
+    </div>
+    
+    <!-- Titolo della pagina -->
+    <div class="section-title">
+        <h1>CONTATTI</h1>
+    </div>
+
+    <!-- Sezione Contatti -->
+    <div class="contact-section">
+        <div class="contact-image">
+            <img src="./img/contatti.jpg" alt="foto bacchette">
+        </div>
+        <div class="contact-form">
+            <!-- Modulo di contatto con Formspree -->
+            <form action="https://formspree.io/f/mkgnendg" method="POST">
+                <label for="nome">Nome e Cognome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="oggetto">Oggetto:</label><br>
+                <input type="text" id="oggetto" name="oggetto" required><br><br>
+
+                <label for="messaggio">Messaggio:</label><br>
+                <textarea id="messaggio" name="messaggio" rows="4" required></textarea><br><br>
+
+                <button type="submit">INVIA</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer" class="container">
+        <div id="footer-text">
+            <p>REALIZZATO DA: <br> Gianluca Careccia</p>
+        </div>
+        <div id="socials" class="socials">
+            <div class="social-container">
+                <a href="https://wa.me/393409574914" target="_blank">
+                    <span class="social-text">Whatsapp</span>
+                    <img src="./img/whatsapp.png" alt="Logo WhatsApp" class="social-image">
+                </a>
+            </div>
+            <div class="social-container">
+                <a href="https://www.instagram.com/remo.nellarte/" target="_blank">
+                    <span class="social-text">Instagram</span>
+                    <img src="./img/instagram.png" alt="Logo Instagram" class="social-image">
+                </a>
+            </div>
+            <div class="social-container">
+                <a href="https://www.facebook.com/gianluca.careccia" target="_blank">
+                    <span class="social-text">Facebook</span>
+                    <img src="./img/facebook.png" alt="Logo Facebook" class="social-image">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
