@@ -1,0 +1,233 @@
+/* Stile Generale */
+body {
+    background-color: #004759;
+    font-family: 'Futura', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenitore comune per l'intero layout */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10%;
+}
+
+/* Header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#logo img {
+    width: 150px;
+    height: auto;
+    max-width: 100%;
+}
+
+#menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-link {
+    color: #00BEB9;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* Titolo pagina */
+.section-title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 48px;
+    color: white;
+}
+
+/* Sezione Contatti */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.contact-image img {
+    width: 40%;
+    height: auto;
+    margin-left: 20px; /* Aggiungi margine sinistro per distanziare la foto */
+}
+
+.contact-form {
+    background-color: #006F81;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 10px; /* Riduci lo spazio tra la foto e il modulo */
+}
+
+
+form label {
+    font-size: 16px;
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #00BEB9;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #00BEB9;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #008C8D;
+}
+
+/* Footer */
+#footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #004759;
+    color: #00BEB9;
+}
+
+#footer-text {
+    font-size: 18px;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.social-container {
+    text-align: center;
+}
+
+.social-text {
+    color: #00BEB9;
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.social-image {
+    width: 50px;
+    height: auto;
+    display: none;
+}
+
+/* Mostra le immagini dei social al passaggio del mouse */
+.social-container:hover .social-text {
+    display: none;
+}
+
+.social-container:hover .social-image {
+    display: inline-block;
+}
+
+/* Media Query per schermi piccoli */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 5%;
+    }
+
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .socials {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer-text {
+        text-align: center;
+    }
+
+    .menu-link {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .social-image {
+        width: 30px;
+    }
+
+    .menu-hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}
+
+/* Media Query per schermi molto piccoli */
+@media (max-width: 480px) {
+    .contact-form {
+        width: 100%;
+    }
+
+    #logo img {
+        width: 120px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
